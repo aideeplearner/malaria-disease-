@@ -1,0 +1,48 @@
+<screen_manager>:
+    MDScreen:
+        name:"screen1"
+        id:first
+        Image:
+            id:img
+            source:""
+            pos_hint:{"center_x":0.5,"center_y":0.6}
+        BoxLayout:
+            MDLabel:
+                text:"Malaria Disease Classification"
+                pos_hint:{"center_x":0.5,"center_y":0.9}
+                halign:"center"
+                font_style:"H4"
+                
+        
+
+        MDLabel:
+            text:""
+            id:mal
+            pos_hint:{'center_x':0.5,'center_y':0.6}
+        MDRaisedButton:
+            text:"choose a file"
+            pos_hint: {'center_x': 0.5,'center_y': 0.35}
+            size_hint_x:0.5
+            on_press:
+                app.choose()
+        MDRaisedButton:
+            text:"Predict"
+            pos_hint:{'center_x':0.5,"center_y":0.25}
+            size_hint_x:0.5
+            on_press:app.pred()
+        MDLabel:
+            id:result
+            text:"result"
+            pos_hint:{"center_x":0.5,"center_y":0.05}
+            halign:'center'
+            font_style:"H4"
+          
+            
+            
+
+              
+    
+            
+            
+    
+        
